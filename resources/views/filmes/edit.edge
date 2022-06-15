@@ -1,0 +1,10 @@
+@layout('layouts/main')
+
+@section('conteudo')
+<h1>Editar filme</h1>
+
+@!component('filmes/_form', {
+    rota: route('filme.update', {id: filme.id}),
+    dados: filme
+})
+@end

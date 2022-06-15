@@ -1,0 +1,10 @@
+@layout('layouts/main')
+
+@section('conteudo')
+<h1>Cadastro de filme</h1>
+
+@!component('filmes/_form', {
+    rota: route('filme.store'),
+    dados: filme
+})
+@end

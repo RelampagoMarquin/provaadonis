@@ -1,0 +1,21 @@
+<form method="POST" action="{{ rota }}">
+    <div class="mb-3">
+        <label class="form-label">Nome do filme</label>
+        <input type="text" name="nome" class="form-control" value="{{ dados?.nome || '' }}">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ator</label>
+        <input type="text" name="ator" class="form-control" value="{{ dados?.ator || '' }}">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ano</label>
+        <input type="text" name="ano" class="form-control" value="{{ dados?.ano || '' }}">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Resumo</label>
+        <textarea name="resumo" class="form-control" rows="3">{{ dados?.resumo || '' }}</textarea>
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </div>
+</form>
